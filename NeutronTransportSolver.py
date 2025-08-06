@@ -1,17 +1,12 @@
-from dolfinx import mesh
 from mpi4py import MPI
 from dolfinx import *
-import matplotlib.pyplot as plt
 import numpy as np
-from mpi4py import MPI
-from dolfinx import fem, default_scalar_type
-from mpi4py     import MPI
 from slepc4py   import SLEPc
-from dolfinx.fem.petsc import assemble_matrix
 from mshr import *
 import basix
 import ufl
 import os
+
 
 class NeutronTransportSolver:
     def __init__(
