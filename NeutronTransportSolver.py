@@ -1,5 +1,6 @@
 from mpi4py import MPI
 from dolfinx import *
+from dolfinx import fem, default_scalar_type
 import numpy as np
 from slepc4py   import SLEPc
 from mshr import *
